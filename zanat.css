@@ -1,0 +1,159 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    }
+    
+    #header {
+    text-align: center;
+    margin: 1px auto;
+    background-image: url(img/headerbg.jfif);
+    box-shadow: black 0px 5px 10px;
+    }
+    
+    /* Logo slika */
+    #header img {
+    padding-top: 10px;
+    width: 20rem;
+    }
+
+    /* Navbar */
+    .navbar {
+    background-color: #00000000;
+    background-image: url(img/metal.png);
+    width: 60vh;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    box-shadow: black 0px 5px 10px;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+    }
+    
+    /* Navbar links */
+    .navbar a {
+    color: #edc14d;
+    text-decoration: none;
+    font-family: 'Alatsi', sans-serif;          
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;                            
+    font-size: 2rem;
+    margin-right: 25px;
+
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .navbar a:hover {
+    color: #0094FF;
+    }
+    
+    body {
+    background-image: url("img/bg.jpg");
+    background-size:cover;
+    }
+/* OPIS */
+.opis {
+    font-family: 'VL NewParis Headline', sans-serif;
+                                                
+    font-weight:lighter;
+    font-style: italic;                                                              
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000;
+                           
+}
+
+
+/* SEARCH BAR */
+    .search-bar {
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .search-bar form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .search-bar input[type="text"] {
+        padding: 10px;
+        border-color: #000000;
+        border-radius: 20px;
+        outline:none;
+        font-size: 18px;
+        color: #333;
+        width: 25rem;
+        height: 2.1rem;
+      }
+      
+      .search-bar button[type="submit"] {
+        background-color: #0094FF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        width: 3.8rem;
+        height: 2.8rem;
+        border-radius: 20px;
+        margin-left: -65px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .search-bar button[type="submit"]:hover {
+        background-color: #edc14d;
+        color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+
+/*Responsive*/
+@media screen and (max-width: 1280px) {
+    #container {
+        padding:3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        background-size:auto;
+        transition: all 0.3s ease-in-out;
+        }
+
+        #header img {
+            padding-top: 10px;
+            width: 12vh;
+            transition: all 0.3s ease-in-out;
+        }
+    
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        position:relative;
+        width:15vh;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Navbar links */
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .search-bar input[type="text"] {
+        transition: all 0.3s ease-in-out;
+        width: 12rem;
+    }
+
+}

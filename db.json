@@ -1,0 +1,42 @@
+[
+    {
+        "username": "user1",
+        "password": "password1",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "rating": 4.5,
+        "experience": 5,
+        "jobTitle": "Software Developer",
+        "location": "New York, USA"
+    },
+    {
+        "username": "user2",
+        "password": "password2",
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "rating": 3.8,
+        "experience": 3,
+        "jobTitle": "Web Designer",
+        "location": "Los Angeles, USA"
+    },
+    {
+        "username": "user3",
+        "password": "password3",
+        "name": "Bob Johnson",
+        "email": "bobjohnson@example.com",
+        "rating": 4.2,
+        "experience": 7,
+        "jobTitle": "Data Analyst",
+        "location": "Chicago, USA"
+    },
+    {
+        "username": "adel",
+        "password": "123456",
+        "name": "Adel Kobic",
+        "email": "adel05@gmail.com",
+        "rating": "1",
+        "experience": "1",
+        "jobTitle": "1",
+        "location": "Zjenica"
+    }
+]
