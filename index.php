@@ -4,7 +4,7 @@ include ("template/header.php");
 <!-- Opis -->
 <div class="opis">
 <h1>
-    Najveća baza zanatskih poslova u BiH
+    Najveća baza zanatskih poslova u BiH 2
     </h1>
 </div>
     <!-- Search Bar -->
