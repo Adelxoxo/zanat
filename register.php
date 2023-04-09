@@ -9,9 +9,11 @@ $users = json_decode($data, true);
 // Check if the form has been submitted
 // Get the form data
 if(isset($_POST['register'])) {
+    $image = $_POST['image'];
     $username = $_POST['username'];
     $password = $_POST['password'];
     $name = $_POST['name'];
+    $description = $_POST['description'];
     $email = $_POST['email'];
     $rating = $_POST['rating'];
     $experience = $_POST['experience'];
@@ -20,9 +22,11 @@ if(isset($_POST['register'])) {
     
     // Create a new user object
     $newUser = array(
+        'image' => $image,
         'username' => $username,
         'password' => $password,
         'name' => $name,
+        'description' => $description,
         'email' => $email,
         'rating' => $rating,
         'experience' => $experience,
@@ -57,6 +61,12 @@ if(isset($_POST['register'])) {
 
     <label>Lozinka:</label>
     <input type="password" name="password" required><br>
+
+    <label>Profilna slika (link):</label>
+    <input type="text" name="image" required><br>
+    
+    <label>Opis: </label>
+    <textare rows="4" cols="50" type="text" name="description" required><br>
 
     <label>Ime i prezime:</label>
     <input type="text" name="name" required><br>

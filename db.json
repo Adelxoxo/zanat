@@ -1,18 +1,22 @@
 [
     {
-        "username": "user1",
+        "image": "https://blmojgrad.com/wp-content/uploads/2018/12/zanatlija.jpg",
+        "username": "Hamdo",
         "password": "password1",
         "name": "John Doe",
+        "description": "John Doe description",
         "email": "johndoe@example.com",
         "rating": 4.5,
         "experience": 5,
-        "jobTitle": "Software Developer",
+        "jobTitle": "Sahadjija",
         "location": "New York, USA"
     },
     {
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80",
         "username": "user2",
         "password": "password2",
         "name": "Jane Smith",
+        "description": "Jane Smith description",
         "email": "janesmith@example.com",
         "rating": 3.8,
         "experience": 3,
@@ -20,9 +24,11 @@
         "location": "Los Angeles, USA"
     },
     {
+        "image": "https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg",
         "username": "user3",
         "password": "password3",
         "name": "Bob Johnson",
+        "description": "Bob Johnson description",
         "email": "bobjohnson@example.com",
         "rating": 4.2,
         "experience": 7,
@@ -30,9 +36,11 @@
         "location": "Chicago, USA"
     },
     {
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
         "username": "adel",
         "password": "123456",
         "name": "Adel Kobic",
+        "description": "Adel Kobic description",
         "email": "adel05@gmail.com",
         "rating": "1",
         "experience": "1",
