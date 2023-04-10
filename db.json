@@ -2,7 +2,7 @@
     {
         "image": "https://blmojgrad.com/wp-content/uploads/2018/12/zanatlija.jpg",
         "username": "Hamdo",
-        "password": "password1",
+        "password": "45958a0365f8eab505762e491638798c",
         "name": "John Doe",
         "description": "John Doe description",
         "email": "johndoe@example.com",
@@ -14,7 +14,7 @@
     {
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80",
         "username": "user2",
-        "password": "password2",
+        "password": "45958a0365f8eab505762e491638798c",
         "name": "Jane Smith",
         "description": "Jane Smith description",
         "email": "janesmith@example.com",
@@ -26,7 +26,7 @@
     {
         "image": "https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg",
         "username": "user3",
-        "password": "password3",
+        "password": "45958a0365f8eab505762e491638798c",
         "name": "Bob Johnson",
         "description": "Bob Johnson description",
         "email": "bobjohnson@example.com",
@@ -38,7 +38,7 @@
     {
         "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
         "username": "adel",
-        "password": "123456",
+        "password": "45958a0365f8eab505762e491638798c",
         "name": "Adel Kobic",
         "description": "Adel Kobic description",
         "email": "adel05@gmail.com",
