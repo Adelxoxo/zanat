@@ -15,7 +15,7 @@ foreach ($users as $user) {
             ?>
             <!-- Opis -->
             <div class="profil">
-                <h1><img src="<?php echo $user['image']; ?>"></h1>
+                <h1><img width="150" src="<?php echo $user['image']; ?>"></h1>
                 <h1>Ovo je profil korisnika - <?php echo $user['name'] ?></h1>
                 <h3>Njegov Opis</h3>
                 <p><?php echo $user['description']; ?></p><br>
