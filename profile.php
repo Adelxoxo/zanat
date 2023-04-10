@@ -1,6 +1,7 @@
 <?php 
 include ("template/header.php");
-
+// Define the path to the JSON file
+$file = 'db.json';
 // Get the contents of the file and decode it into a PHP array
 $data = file_get_contents($file);
 $users = json_decode($data, true);
