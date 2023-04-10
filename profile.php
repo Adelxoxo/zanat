@@ -1,23 +1,38 @@
 <?php 
 include ("template/header.php");
 
-if(isset($_SESSION['user'])) {
-?>
-<!-- Opis -->
-<div class="profil">
-    <h1><img src="<?php echo $_SESSION['user']['image']; ?>"></h1>
-    <h1>Dobrodosli na vas profil, <?php echo $_SESSION['user']['name'] ?></h1>
-    <h3>Moj Opis</h3>
-    <p><?php echo $_SESSION['user']['description']; ?></p><br>
-    <h3>Vas username, <?php echo $_SESSION['user']['username'] ?></h3>
-    <h3>Vas email, <?php echo $_SESSION['user']['email'] ?></h3>
-    <h3>Vas rating je, <?php echo $_SESSION['user']['rating'] ?></h3>
-    <h3>Vas experience, <?php echo $_SESSION['user']['experience'] ?></h3>
-    <h3>Vas jobTitle, <?php echo $_SESSION['user']['jobTitle'] ?></h3>
-    <h3>Vas location, <?php echo $_SESSION['user']['location'] ?></h3>
-</div>
+// Get the contents of the file and decode it into a PHP array
+$data = file_get_contents($file);
+$users = json_decode($data, true);
 
-<?php
+// Check if the username and password match an existing user
+foreach ($users as $user) {
+    // Pronadji korisnika kojiem id odgovara
+    if($user['id'] == $_GET['id']) {
+        // Ukoliko je "?id=broj" u linku ...
+        if(isset($_GET['id'])) {
+            ?>
+            <!-- Opis -->
+            <div class="profil">
+                <h1><img src="<?php echo $user['user']['image']; ?>"></h1>
+                <h1>Ovo je profil korisnika - <?php echo $_SESSION['user']['name'] ?></h1>
+                <h3>Njegov Opis</h3>
+                <p><?php echo $user['user']['description']; ?></p><br>
+                <h3>Korisnicko ime, <?php echo $user['user']['username'] ?></h3>
+                <h3>Email, <?php echo $user['user']['email'] ?></h3>
+                <h3>Rating je, <?php echo $user['user']['rating'] ?></h3>
+                <h3>Iskustvo, <?php echo $user['user']['experience'] ?></h3>
+                <h3>Zanimanje, <?php echo $user['user']['jobTitle'] ?></h3>
+                <h3>Lokacija, <?php echo $user['user']['location'] ?></h3>
+            </div>
+            
+        <?php
+        }
+    }
+
+    // Ne trebamo vise iteratat jer je korisnik vec pronadjen i podatci su prikazani
+    break;
 }
+
 include ("template/footer.php");
 ?>

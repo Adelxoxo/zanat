@@ -46,7 +46,7 @@ foreach ($users as $user) {
 
 <tr>
   <td><img width="50" src="<?php echo $user['image'];?>"></td>
-  <td><?php echo $user['username'];?></td>
+  <td><a href="profile.php?id=<?php echo $user['id']; ?>"><?php echo $user['username'];?></a></td>
   <td><?php echo $user['name'];?></td>
   <td><?php echo $user['email'];?></td>
   <td><?php echo $user['rating'];?></td>

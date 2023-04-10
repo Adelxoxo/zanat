@@ -28,7 +28,7 @@
             <a href="register.php">Registracija</a>
         <?php } else { ?>
             <!--Linkovi su prikazani kada je kontakt ulogovan-->
-            <a href="profile.php">Dobrodosli, <b style="color: red;"><?php echo $_SESSION['user']['name']; ?></b></a>
+            <a href="dashboard.php">Dobrodosli, <b style="color: red;"><?php echo $_SESSION['user']['name']; ?></b></a>
             <a href="logout.php">Logout</a>
         <?php } ?>
 
