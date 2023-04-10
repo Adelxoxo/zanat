@@ -15,16 +15,16 @@ foreach ($users as $user) {
             ?>
             <!-- Opis -->
             <div class="profil">
-                <h1><img src="<?php echo $user['user']['image']; ?>"></h1>
-                <h1>Ovo je profil korisnika - <?php echo $user['user']['name'] ?></h1>
+                <h1><img src="<?php echo $user['image']; ?>"></h1>
+                <h1>Ovo je profil korisnika - <?php echo $user['name'] ?></h1>
                 <h3>Njegov Opis</h3>
-                <p><?php echo $user['user']['description']; ?></p><br>
-                <h3>Korisnicko ime, <?php echo $user['user']['username'] ?></h3>
-                <h3>Email, <?php echo $user['user']['email'] ?></h3>
-                <h3>Rating je, <?php echo $user['user']['rating'] ?></h3>
-                <h3>Iskustvo, <?php echo $user['user']['experience'] ?></h3>
-                <h3>Zanimanje, <?php echo $user['user']['jobTitle'] ?></h3>
-                <h3>Lokacija, <?php echo $user['user']['location'] ?></h3>
+                <p><?php echo $user['description']; ?></p><br>
+                <h3>Korisnicko ime, <?php echo $user['username'] ?></h3>
+                <h3>Email, <?php echo $user['email'] ?></h3>
+                <h3>Rating je, <?php echo $user['rating'] ?></h3>
+                <h3>Iskustvo, <?php echo $user['experience'] ?></h3>
+                <h3>Zanimanje, <?php echo $user['jobTitle'] ?></h3>
+                <h3>Lokacija, <?php echo $user['location'] ?></h3>
             </div>
             
         <?php
