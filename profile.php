@@ -9,9 +9,9 @@ $users = json_decode($data, true);
 // Check if the username and password match an existing user
 foreach ($users as $user) {
     // Pronadji korisnika kojiem id odgovara
-    if($user['id'] == $_GET['id']) {
+    if($user['username'] == $_GET['username']) {
         // Ukoliko je "?id=broj" u linku ...
-        if(isset($_GET['id'])) {
+        if(isset($_GET['username'])) {
             ?>
             <!-- Opis -->
             <div class="profil">
