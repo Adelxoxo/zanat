@@ -15,8 +15,8 @@ $loggedInUser = '';
 if (isset($_POST['username']) && isset($_POST['password'] )) {
     // Get the login form data
     $username = $_POST['username'];
-    $password = $_POST['password'];
-
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    
     // Check if the username and password match an existing user
     foreach ($users as $user) {
         if ($user['username'] == $username && $user['password'] == $password) {

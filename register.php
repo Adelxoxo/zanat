@@ -11,7 +11,7 @@ $users = json_decode($data, true);
 if(isset($_POST['register'])) {
     $image = $_POST['image'];
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $name = $_POST['name'];
     $description = $_POST['description'];
     $email = $_POST['email'];
