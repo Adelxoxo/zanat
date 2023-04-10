@@ -45,7 +45,7 @@ foreach ($users as $user) {
 ?>
 
 <tr>
-  <td><img src="<?php echo $user['image'];?>"></td>
+  <td><img width="50" src="<?php echo $user['image'];?>"></td>
   <td><?php echo $user['username'];?></td>
   <td><?php echo $user['name'];?></td>
   <td><?php echo $user['email'];?></td>
