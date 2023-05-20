@@ -11,7 +11,7 @@ $users = json_decode($jsonData, true);
 <!-- Opis -->
 <div class="opis">
 <h1>
-    Najveća baza zanatskih poslova u BiH 2
+    Najveća baza zanatskih poslova u BiH
     </h1>
 </div>
 <!-- Search Bar -->
